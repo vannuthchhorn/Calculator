@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
+		<title>A simple calculator</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	</head>
+	<body>
+		<div id="container">
+			<div id="calculator">
+				<div id="result">
+					<div id="output-text">
+						<div id="history">
+							<p id="history-value"></p>
+						</div>
+						<div id="enter"></div>
+						<div id="output">
+							<p id="output-value"></p>
+						</div>
+					</div>
+					<div id="output-microphone">
+						<span id="microphone">
+						</span>
+						<span class="tooltip">Operations are plus, minus, multiply, divide &amp; reminder
+						The user input format is number + operation + number<br><br>
+						Eg: 2 multiply 5 will be 2 &times 5
+						</span>
+					</div>
+				</div>
+				<div id="keyboard">
+					<button class="operator" onclick="clean()" id="clear">C</button>
+					<button class="operator" onclick="backspace()" id="backspace">CE</button>
+					<button class="operator" onclick="operator('%')" id="%">%</button>
+					<button class="operator" onclick="operator('/')" id="/">&#247;</button>
+					<button class="number" onclick="number(7)" id="7">7</button>
+					<button class="number" onclick="number(8)" id="8">8</button>
+					<button class="number" onclick="number(9)" id="9">9</button>
+					<button class="operator" onclick="operator('*')" id="*">&times;</button>
+					<button class="number" onclick="number(4)" id="4">4</button>
+					<button class="number" onclick="number(5)" id="5">5</button>
+					<button class="number" onclick="number(6)" id="6">6</button>
+					<button class="operator" onclick="operator('-')" id="-">-</button>
+					<button class="number" onclick="number(1)" id="1">1</button>
+					<button class="number" onclick="number(2)" id="2">2</button>
+					<button class="number" onclick="number(3)" id="3">3</button>
+					<button class="operator" onclick="operator('+')" id="+">+</button>
+					<button class="empty"  id="empty"></button>
+					<button class="number" onclick="number(0)" id="0">0</button>
+					<button class="empty" id="empty"></button>
+					<button class="operator" onclick="culculator()" id="=">=</button>
+				</div>
+			</div>
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>
